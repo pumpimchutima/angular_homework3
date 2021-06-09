@@ -1,0 +1,10 @@
+.btn[aria-expanded="true"] i{
+    transform: rotate(90deg);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.sidebar{
+    border-right: 1px solid #c8d3dc;
+}

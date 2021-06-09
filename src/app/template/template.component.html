@@ -1,0 +1,64 @@
+<div class="row">
+  <div class="col-3 sidebar">
+    <h5>Commonly Used</h5>
+    <ul class="list-unstyled mb-0 py-3 pt-md-1">
+      <li>
+        <button
+          class="btn d-inline-flex align-items-center rounded collapsed"
+          data-bs-toggle="collapse"
+          data-bs-target="#text-editor-sub-menu"
+          aria-expanded="false"
+        >
+          <i class="bi bi-caret-right-fill"></i>
+          Text Editor
+        </button>
+        <div class="collapse" id="text-editor-sub-menu">
+          <ul class="list-unstyled px-4">
+            <li>
+              <a href="#cursor">Cursor</a>
+            </li>
+            <li>
+              <a href="#find">Find</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <button
+          class="btn d-inline-flex align-items-center rounded collapsed"
+          data-bs-toggle="collapse"
+          data-bs-target="#workbench-sub-menu"
+          aria-expanded="false"
+        >
+          <i class="bi bi-caret-right-fill"></i>
+          Workbench
+        </button>
+        <div class="collapse" id="workbench-sub-menu">
+          <ul class="list-unstyled px-4">
+            <li>
+              <a href="#appearence">Appearence</a>
+            </li>
+            <li>
+              <a href="#breadcrumbs">Breadcrumbs</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="col-9 content">
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#navbar-example3"
+      data-bs-offset="0"
+      tabindex="0"
+    >
+    <div *ngFor="let item of keys">
+      <h4 id={{item.key}}>{{item.key}}</h4>
+      <p>set {{item.key}} : <input value="{{item.keyValue}}"/></p>
+    </div>
+      
+     
+    </div>
+  </div>
+</div>
